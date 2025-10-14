@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// declaration (no storage here)
+// declaration (no storage here) easy level
 extern int counter;
 
 int main(void) {

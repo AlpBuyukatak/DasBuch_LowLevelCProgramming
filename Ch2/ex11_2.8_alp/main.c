@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Absolute addressing (simulated with a global variable at fixed address)
+// Absolute addressing easy level (simulated with a global variable at fixed address)
 #define ABS_VAR (*(volatile int*)0x1000)
 
 int main() {

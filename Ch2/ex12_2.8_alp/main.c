@@ -1,5 +1,5 @@
 //the code has taken from: https://www.geeksforgeeks.org/c/c-pointers/
-
+//addressing type normal level
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>

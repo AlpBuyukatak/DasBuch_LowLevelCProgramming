@@ -1,3 +1,5 @@
+
+//declaration normal level
 #include <stdio.h>
 #include "data.h"
 
