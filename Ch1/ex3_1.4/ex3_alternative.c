@@ -1,6 +1,6 @@
 //1.4 Type Definition
 #include <stdio.h>
-#include <stdint.h>   // <--- önemli
+#include <stdint.h>   // <--- important
 
 typedef uint16_t UWORD;   // exact 16 bit
 

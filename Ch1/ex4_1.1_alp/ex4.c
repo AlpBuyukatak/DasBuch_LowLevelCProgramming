@@ -11,12 +11,12 @@ int main() {
     if (sflag > 0)
         printf("sflag > 0 (signed)\n");
     else
-        printf("sflag NOT > 0 (signed)\n");
+        printf("sflag < 0 (signed)\n");
 
     if (uflag > 0)
         printf("uflag > 0 (unsigned)\n");
     else
-        printf("uflag NOT > 0 (unsigned)\n");
+        printf("uflag < 0 (unsigned)\n");
 
     return 0;
 }

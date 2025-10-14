@@ -1,16 +1,19 @@
+
+//LEVEL: MEDIUM - HARD
+
 #include <stdio.h>
 
-/* Returns the square of x */
+/* Returns the square of x for option a*/
 int square(int x) {
     return x * x;
 }
 
-/* Prints the square of x (returns nothing) */
+/* Prints the square of x (returns nothing) for option b  */
 void square_print(int x) {
     printf("%d^2 = %d\n", x, x * x);
 }
 
-/* Writes the square of x into *out (returns nothing) */
+/* Writes the square of x into *out (returns nothing) (uses pointer) for option d */
 void square_out(int x, int *out) {
     if (out != NULL) {
         *out = x * x;

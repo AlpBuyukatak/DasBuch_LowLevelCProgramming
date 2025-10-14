@@ -1,11 +1,11 @@
 //1.4 Type Definition
 #include <stdio.h>
 
-// If we work on 32-bit system: 
+// If we work on 16-bit system: 
 typedef unsigned int UWORD;   // 16-bit unsigned int
 
 // If we work on 32-bit system:
-// typedef unsigned short UWORD;   // write this line instead of 5.line
+// typedef unsigned short UWORD;   // intended process; write this line instead of 5.line
 
 
 int main() {
