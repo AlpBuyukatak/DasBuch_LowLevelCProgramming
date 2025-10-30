@@ -1,40 +1,31 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <string.h>
 
-typedef uint8_t BYTE;                 
-
-// We create 1KB of virtual memory and clean it up first
-static BYTE mem[0x400] = {0};
-
-//Base addresses in simulation: two arbitrary regions within the array
-#define IN_BASE_OFF   0x100
-#define OUT_BASE_OFF  0x200
-
-#define INPORT_SIM    (mem + IN_BASE_OFF)
-#define OUTPORT_SIM   (mem + OUT_BASE_OFF)
+typedef uint8_t BYTE;   // BYTE = unsigned char (1 byte)
 
 int main(void) {
-    // A,B,C,D fields in INPORT (like A=0,B=1,C=2,D=3)
-    INPORT_SIM[0] = 0xAA;   // A
-    INPORT_SIM[2] = 0xB1;   // B  (ofset +2)
-    INPORT_SIM[4] = 0xC2;   // C
-    INPORT_SIM[6] = 0xD3;   // D
+    // Simulated input and output ports (arrays)
+    BYTE INPORT[8]  = {'A', 'B', 'C', 'D', 0, 0, 0, 0};
+    BYTE OUTPORT[8] = {0};
 
-    // 2) Pointer Addressing with Offset  (in the simulation)
-    BYTE *inport  = INPORT_SIM;
-    BYTE *outport = OUTPORT_SIM;
-    *(outport + 6) = *(inport + 2);   // D = B
+    // 1️.Absolute Addressing (simulated)
+    // Imagine these are fixed hardware addresses:
+    // *((BYTE*)0x1C8206) = *((BYTE*)0x1C8102);
+    OUTPORT[6] = INPORT[2];
 
-    // 3) Absolute Addressing as an Array
-    OUTPORT_SIM[6] = INPORT_SIM[2];
+    // 2️.Pointer Addressing with Offset
+    BYTE *inport  = INPORT;
+    BYTE *outport = OUTPORT;
+    *(outport + 6) = *(inport + 2);
 
-    // 1) Absolute Addressing of Memory Locations
-    // We calculate index (base+offset) instead of "absolute address"??????im confused 
-    mem[OUT_BASE_OFF + 6] = mem[IN_BASE_OFF + 2];  // *((BYTE*)0x1C8206) = *((BYTE*)0x1C8102);
+    // 3️.Array Indexing (most readable form)
+    #define INPORT_PTR  (INPORT)
+    #define OUTPORT_PTR (OUTPORT)
+    OUTPORT_PTR[6] = INPORT_PTR[2];
 
-    printf("IN.B  (IN[2])  = 0x%02X\n", INPORT_SIM[2]);
-    printf("OUT.D (OUT[6]) = 0x%02X\n", OUTPORT_SIM[6]);  
+    // Display results
+    printf("INPORT[2]  = %c\n", INPORT[2]);
+    printf("OUTPORT[6] = %c\n", OUTPORT[6]);
 
     return 0;
 }
