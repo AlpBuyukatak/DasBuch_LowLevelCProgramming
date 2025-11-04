@@ -25,8 +25,8 @@ WORD *int_arr_div(WORD *arr1, const WORD *arr2, size_t n)
             rems[i]  = arr1[i];   // If divisor is 0, remainder = dividend
             arr1[i]  = 0;         // Define quotient as 0 (just a safe fallback)
         } else {
-            rems[i]  = (WORD)(arr1[i] % arr2[i]);   // store remainder
-            arr1[i]  = (WORD)(arr1[i] / arr2[i]);   // update arr1 with quotient
+            rems[i]  = (WORD)(arr1[i] % arr2[i]);   // store remainder kalan
+            arr1[i]  = (WORD)(arr1[i] / arr2[i]);   // update arr1 with quotient bölüm
         }
     }
 
