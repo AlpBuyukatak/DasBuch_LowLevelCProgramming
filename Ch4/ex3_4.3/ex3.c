@@ -1,44 +1,58 @@
-
 #include <stdio.h>
 #include <stdint.h>
-#include <stddef.h>
+#include <stdlib.h>
 
-typedef uint16_t WORD;  // 16-bit element type
+typedef uint16_t WORD;
 
-/* 1) Copy using indexing */
-void acopy1(WORD dest[], const WORD source[], size_t size) {
-    for (size_t i = 0; i < size; ++i) {
-        dest[i] = source[i];
-    }
-}
+/*  
+   arr1 → contains the dividends  
+   arr2 → contains the divisors  
+   n    → number of elements  
 
-/* 2) Copy using pointer arithmetic */
-void acopy2(WORD *dest, const WORD *source, size_t size) {
-    while (size--) {
-        *dest++ = *source++;
-    }
-}
+   Returns:  
+   A pointer to a new array (allocated with malloc) that stores the remainders.  
+   Note: The caller must free() this array after use.  
+*/
+WORD *int_arr_div(WORD *arr1, const WORD *arr2, size_t n)
+{
+    // Allocate memory dynamically for remainders
+    WORD *rems = (WORD *)malloc(n * sizeof(WORD));
+    if (!rems) return NULL;  // If allocation fails, return NULL
 
-static void print_array(const char *name, const WORD *a, size_t n) {
-    printf("%s = {", name);
+    // Loop through all array elements
     for (size_t i = 0; i < n; ++i) {
-        printf("%s%u", (i ? ", " : ""), (unsigned)a[i]);
+        if (arr2[i] == 0) {       // Protect against division by zero
+            rems[i]  = arr1[i];   // If divisor is 0, remainder = dividend
+            arr1[i]  = 0;         // Define quotient as 0 (just a safe fallback)
+        } else {
+            rems[i]  = (WORD)(arr1[i] % arr2[i]);   // store remainder
+            arr1[i]  = (WORD)(arr1[i] / arr2[i]);   // update arr1 with quotient
+        }
     }
-    printf("}\n");
+
+    return rems;  // Return the pointer to the remainder array
 }
 
-int main(void) {
-    WORD xarr[5] = {10, 20, 30, 40, 50};
-    WORD yarr[5] = {0};
-    WORD zarr[5] = {0};
-    size_t n = sizeof xarr / sizeof xarr[0];
+/* I randomly gave values to arr1 and arr2 */
+int main(void)
+{
+    WORD arr1[] = {10, 20, 30, 40};
+    WORD arr2[] = {3,  5,  7,  0};
+    size_t n = sizeof arr1 / sizeof arr1[0];
 
-    acopy1(yarr, xarr, n);   // copy via indexing
-    acopy2(zarr, xarr, n);   // copy via pointers
+    WORD *rema = int_arr_div(arr1, arr2, n);
+    if (!rema) {
+        fprintf(stderr, "Memory allocation failed!\n");
+        return 1; // fail so returns 1
+    }
 
-    print_array("xarr", xarr, n);
-    print_array("yarr (acopy1)", yarr, n);
-    print_array("zarr (acopy2)", zarr, n);
+    printf("Quotients (arr1): ");
+    for (size_t i = 0; i < n; ++i) printf("%u ", arr1[i]);
 
+    printf("\nRemainders (return value): ");
+    for (size_t i = 0; i < n; ++i) printf("%u ", rema[i]);
+    printf("\n");
+
+    free(rema);  // Always release malloc'ed memory when done
     return 0;
 }
