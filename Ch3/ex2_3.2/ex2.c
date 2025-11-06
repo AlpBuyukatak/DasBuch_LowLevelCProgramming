@@ -1,5 +1,4 @@
-
-//3.2 Null Pointer
+//3.2 Null Pointer - page 48
 // JUST EXAMINE THE CODE
 
 #include <stdio.h>

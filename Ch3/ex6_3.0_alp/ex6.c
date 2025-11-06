@@ -16,4 +16,4 @@ int main() {
    return 0;
 }
 
-//credited from "https://www.tutorialspoint.com/cprogramming/c_typedef.htm" (ex3)
+//credited from "https://www.tutorialspoint.com/cprogramming/c_typedef.htm" (ex6)

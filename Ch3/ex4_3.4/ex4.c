@@ -1,5 +1,5 @@
 
-//3.4 Access with Pointers
+//3.4 Access with Pointers - page 51
 #include <stdio.h>
 #include <stdlib.h>
 
