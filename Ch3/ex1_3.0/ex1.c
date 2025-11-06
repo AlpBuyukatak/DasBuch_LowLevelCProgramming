@@ -1,5 +1,5 @@
 
-//3.0 Pointer
+//3.0 Pointer - page 44-45-46
 // JUST EXAMINE THE CODE
 #include <stdio.h>
 typedef unsigned int WORD;

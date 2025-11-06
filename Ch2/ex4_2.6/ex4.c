@@ -1,4 +1,4 @@
-//2.6 Explicit Type Conversion
+//2.6 Explicit Type Conversion - page 33
 #include <stdio.h>
 
 int main(void) {

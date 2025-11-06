@@ -1,4 +1,4 @@
-//1.4 Type Definition
+//1.4 Type Definition - page 23
 #include <stdio.h>
 
 // If we work on 16-bit system: 

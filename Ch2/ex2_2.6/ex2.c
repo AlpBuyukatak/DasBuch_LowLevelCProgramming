@@ -1,4 +1,4 @@
-//2.6 Explicit Type Conversion
+//2.6 Explicit Type Conversion - page 32
 #include <stdio.h>
 
 /* f1 returns an int */

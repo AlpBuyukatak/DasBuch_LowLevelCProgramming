@@ -8,10 +8,7 @@ typedef uint16_t WORD;
    arr1 → contains the dividends  
    arr2 → contains the divisors  
    n    → number of elements  
-
-   Returns:  
-   A pointer to a new array (allocated with malloc) that stores the remainders.  
-   Note: The caller must free() this array after use.  
+   Returns: A pointer to a new array (allocated with malloc) that stores the remainders.    
 */
 WORD *int_arr_div(WORD *arr1, const WORD *arr2, size_t n)
 {
@@ -25,7 +22,7 @@ WORD *int_arr_div(WORD *arr1, const WORD *arr2, size_t n)
             rems[i]  = arr1[i];   // If divisor is 0, remainder = dividend
             arr1[i]  = 0;         // Define quotient as 0 (just a safe fallback)
         } else {
-            rems[i]  = (WORD)(arr1[i] % arr2[i]);   // store remainder kalan
+            rems[i]  = (WORD)(arr1[i] % arr2[i]);   // store remainder kalan 
             arr1[i]  = (WORD)(arr1[i] / arr2[i]);   // update arr1 with quotient bölüm
         }
     }

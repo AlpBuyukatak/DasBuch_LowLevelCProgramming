@@ -1,4 +1,4 @@
-//2.6 Explicit Type Conversion
+//2.6 Explicit Type Conversion - page 32
 //its an example code 
 #include <stdio.h>
 #include <stdint.h>

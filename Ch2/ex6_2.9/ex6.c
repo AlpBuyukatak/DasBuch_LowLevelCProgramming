@@ -1,4 +1,4 @@
-//2.9 Explicit Type Conversion of Addresses
+//2.9 Explicit Type Conversion of Addresses - page 39
 /* byte will be read from address 0x1000.
 This value will be written to both addresses 0x00008000 and 0xFFFF8000. */
 
