@@ -1,8 +1,9 @@
 //1.2.1 Data Type double
+//float and double differences
 #include <stdio.h>
 
 int main(void) {
-    float  xf = 1e8f;   // 100 milyon
+    float  xf = 1e8f;   // 100 million
     double xd = 1e8;
 
     float  rf = (xf + 1.0f) - xf;

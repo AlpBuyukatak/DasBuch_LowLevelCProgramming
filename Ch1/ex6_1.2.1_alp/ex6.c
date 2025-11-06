@@ -1,5 +1,6 @@
 //1.2.1 Data Type double
 /*
+//this code has just prepared for a comparising between writing speeds
 float → less memory, preferred if sufficient accuracy is required.
 double → more memory but more precision.
 */
