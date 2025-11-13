@@ -6,7 +6,6 @@ and once using pointer arithmetic—and prints all results to show that
 both methods produce identical copies.
 */
 #include <stdio.h>
-
 // Copy array using indexing
 void acopy1(int d[], const int s[], int n)
 {
