@@ -1,4 +1,8 @@
-
+//3.5.3 Subtraction of Pointers
+/*This code interprets two raw addresses as double* pointers and uses pointer 
+subtraction to calculate how many double-sized elements fit between them. 
+It prints the start address, the end address, and the number of doubles that can be stored in that memory range.
+*/
 #include <stdio.h>
 
 int main(void) {

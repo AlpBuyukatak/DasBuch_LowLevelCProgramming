@@ -1,4 +1,9 @@
 //2.6 Explicit Type Conversion - page 32
+/*
+This code calls f1() to get an int, casts that return value to double, 
+and passes it to f2(), which prints it in double format.
+*/
+
 #include <stdio.h>
 
 /* f1 returns an int */

@@ -1,4 +1,3 @@
-
 //3.0 Pointer
 /*The following example shows how you can use typedef to create a struct pointer */
 

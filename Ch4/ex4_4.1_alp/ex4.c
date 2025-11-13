@@ -1,3 +1,9 @@
+//4.1 Pointer to an Array
+/*
+This code shows that arrays and pointers can access the same elements: arr[i], p[i], and *(p + i) 
+all refer to the same values, demonstrating that pointer arithmetic and array indexing 
+are equivalent for accessing array elements.
+*/
 #include <stdio.h>
 
 int main(void) {

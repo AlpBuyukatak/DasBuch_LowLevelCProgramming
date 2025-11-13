@@ -1,4 +1,8 @@
 //1.1.4 Sign Attributes - page 18
+/*
+This code takes a signed 8-bit value, assigns it to a 16-bit short, and prints both bit patterns 
+to show how sign extension works when converting a signed char to a larger integer type.
+*/
 #include <stdio.h>
 #include <stdint.h>
 

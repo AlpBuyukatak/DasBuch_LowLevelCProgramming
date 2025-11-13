@@ -1,5 +1,10 @@
 //2.6 Explicit Type Conversion - page 32
 //its an example code 
+/*
+This code shows how the same hex value 0xFFFF produces different results depending
+on the cast: as a signed 16-bit value it becomes -1, while casting to wider signed 
+or unsigned types preserves it as 65535.
+*/
 #include <stdio.h>
 #include <stdint.h>
 

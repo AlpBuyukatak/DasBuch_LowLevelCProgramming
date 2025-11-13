@@ -1,5 +1,9 @@
-
-//declaration normal level
+//2.1 Declaration
+/*
+This project demonstrates how global variables are defined in data.c, declared with extern in data.h, 
+and then shared across multiple files; main.c calls accumulate() 
+to update the global counter and sum values stored in data.c.
+*/
 #include <stdio.h>
 #include "data.h"
 

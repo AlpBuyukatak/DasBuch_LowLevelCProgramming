@@ -1,3 +1,9 @@
+// 3.4 Access with Pointers
+/*
+This code demonstrates how a pointer and a pointer-to-pointer can both 
+modify the same variable (x) through single and double dereferencing, 
+and finally verifies that pp indeed stores the address of p.
+*/
 #include <stdio.h>
 #include <stdbool.h>
 

@@ -1,4 +1,8 @@
 //2.5 Access to Return Values of Functions - page 31
+/*
+This code shows how function return values can be used directly in assignments, expressions, 
+and even as arguments to other functions, producing the results u = 10, v = 6, and w = 25.
+*/
 #include <stdio.h>
 
 /* Functions */

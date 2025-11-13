@@ -1,6 +1,10 @@
 //3.2 Null Pointer - page 48
 // JUST EXAMINE THE CODE
-
+/*
+This code checks a NULL pointer, then uses malloc to allocate memory, 
+stores a value through the pointer, prints it, and finally frees the allocated memory. 
+It demonstrates safe dynamic memory allocation and NULL checking.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

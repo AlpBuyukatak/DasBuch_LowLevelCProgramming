@@ -1,5 +1,9 @@
 // 2.9 Explicit Type Conversion of Addresses - page 40
-
+/*
+This code stores a 16-bit value and then extracts its low byte in two ways: 
+by assigning the WORD to a BYTE, and by casting its address to a BYTE* 
+and dereferencing it—both yielding 0x34 on a little-endian system.
+*/
 #include <stdio.h>
 typedef unsigned char BYTE;
 typedef unsigned short WORD;

@@ -1,5 +1,8 @@
-
-//easy 
+//3.5.1 Addition/Subtraction of an int Value
+/*
+This code shows the difference between adding to the value (*p + 1) and 
+moving the pointer to the next element *(p + 1) when accessing array elements through a pointer.
+*/
 #include <stdio.h>
 
 int main(void) {

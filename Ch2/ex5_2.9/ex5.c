@@ -1,4 +1,10 @@
 //2.9 Explicit Type Conversion of Addresses - page 39
+/*
+This code simulates memory using an array, stores a byte at index 0x1000, 
+then uses a pointer to read that byte back into a variable. It demonstrates 
+how pointers can access specific “memory addresses” inside an array.
+*/
+
 #include <stdio.h>
 #include <stdint.h>
 

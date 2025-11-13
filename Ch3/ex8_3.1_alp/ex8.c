@@ -1,6 +1,9 @@
-//3.1 Pointer to void -
+//3.1 Pointer to void 
 // JUST EXAMINE THE CODE
-
+/* This code stores the addresses of different variable types in a void* pointer and 
+then casts it to the correct type to print each value. It demonstrates how void* 
+can point to any data type.
+*/
 #include <stdio.h>
 
 int main() {

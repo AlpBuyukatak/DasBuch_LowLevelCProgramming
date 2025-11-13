@@ -1,3 +1,9 @@
+//4.3 Array Address as Return Value of a Function
+/*
+This code divides each element of arr1 by the corresponding element of arr2, storing the 
+quotient back into arr1 and returning a newly allocated array that contains 
+all remainders, while safely handling division by zero.
+*/
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>

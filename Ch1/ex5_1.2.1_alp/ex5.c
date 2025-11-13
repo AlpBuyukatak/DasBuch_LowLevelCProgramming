@@ -1,5 +1,9 @@
 //1.2.1 Data Type double
-//float and double differences
+/*
+This code shows the loss of precision in floating-point arithmetic by 
+comparing how float and double handle adding 1 to a very large number; 
+the float loses the increment (prints 0), while the double keeps it (prints 1).
+*/
 #include <stdio.h>
 
 int main(void) {

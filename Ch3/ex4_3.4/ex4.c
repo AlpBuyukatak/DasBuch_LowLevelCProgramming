@@ -1,5 +1,10 @@
-
 //3.4 Access with Pointers - page 51
+/*
+The operating system will allocate memory for an array of 100 int elements.
+Perform this operation using the malloc() function, assign a value to the first element of the array, 
+and release the memory when the operation is complete.
+(Also, show that malloc()'s void * return eliminates the need for casts.)
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,12 +25,3 @@ int main() {
     free(p);
     return 0;
 }
-
-
-/*
-The operating system will allocate memory for an array of 100 int elements.
-
-Perform this operation using the malloc() function, assign a value to the first element of the array, and release the memory when the operation is complete.
-(Also, show that malloc()'s void * return eliminates the need for casts.)
-
-*/

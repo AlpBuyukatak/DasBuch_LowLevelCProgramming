@@ -1,4 +1,3 @@
-
 //3.0 Pointer
 /*The following example demonstrates how you can use alias names in a C program [TYPEDEF]  */
 

@@ -1,6 +1,10 @@
-
+//4.2 Array Address as a Function Argument
 // Copying Arrays using Pointers (acopy1 / acopy2) just an example. Examine the 2 methods of copying 
-
+/*
+This code copies an integer array in two different ways—once using array indexing 
+and once using pointer arithmetic—and prints all results to show that 
+both methods produce identical copies.
+*/
 #include <stdio.h>
 
 // Copy array using indexing

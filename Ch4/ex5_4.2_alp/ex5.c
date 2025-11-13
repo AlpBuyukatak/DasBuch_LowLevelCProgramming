@@ -1,4 +1,11 @@
-// copy_benchmark_portable.c it just compares the indexing and pointer speed. BENCHMARK TEST 
+//4.2 Array Address as a Function Argument
+// copy_benchmark_portable.c it just compares the indexing and pointer speed. BENCHMARK TEST
+/*
+This program benchmarks and compares the speed of two array copy methods—one using 
+indexing (dst[i] = src[i]) and one using pointer arithmetic (*dst++ = *src++)—by timing 
+them over a large number of elements and reporting their performance in GB/s. 
+It also does a small correctness check to ensure both methods produce the same result.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>

@@ -1,6 +1,8 @@
-
-//LEVEL: MEDIUM - HARD
-
+//1.4 Type Definition
+/*
+This code demonstrates three ways to compute a square in C: 
+returning the result, printing it directly, or writing it to an output pointer,
+and then shows how each approach behaves in expressions.*/
 #include <stdio.h>
 
 /* Returns the square of x for option a*/

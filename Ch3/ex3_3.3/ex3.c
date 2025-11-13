@@ -1,6 +1,9 @@
-
 //3.3 Pointer as Return Value of a Function - page 50
-
+/*
+This code builds a static 2×2 matrix and returns it as a double** by creating an 
+array of pointers that each point to a row; the main function then uses 
+this double pointer to print the matrix elements.
+*/
 #include <stdio.h>
 
 double **getArray() {  

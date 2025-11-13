@@ -13,10 +13,10 @@ double → more memory but more precision.
 #endif
 
 int main(void) {
-    // float dizi: 50M * 4 byte = ~200 MB
+    // float row: 50M * 4 byte = ~200 MB
     float  *af = (float*)  malloc(N * sizeof(float));
     float  *bf = (float*)  malloc(N * sizeof(float));
-    // double dizi: 50M * 8 byte = ~400 MB
+    // double row: 50M * 8 byte = ~400 MB
     double *ad = (double*) malloc(N * sizeof(double));
     double *bd = (double*) malloc(N * sizeof(double));
 

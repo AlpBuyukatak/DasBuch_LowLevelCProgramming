@@ -1,4 +1,8 @@
 //1.1.4 Sign Attributes - page 18
+/*
+This code loads an 8-bit unsigned value and then assigns it to a 32-bit unsigned int, 
+printing both bit patterns to show how zero-extension works when widening an unsigned type.
+*/
 #include <stdio.h>
 #include <stdint.h>
 

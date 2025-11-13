@@ -1,4 +1,7 @@
-//1.1.4 Sign Attributes 
+//1.1.4 Sign Attributes
+/* With int, the MSB is treated as the sign bit, so the number becomes negative.
+With unsigned int, the same bits are always interpreted as a positive value, which is correct for flags.  
+*/
 #include <stdio.h>
 
 int main() {
@@ -20,6 +23,3 @@ int main() {
 
     return 0;
 }
-
-/* With int, the MSB is treated as the sign bit, so the number becomes negative.
-With unsigned int, the same bits are always interpreted as a positive value, which is correct for flags.  */

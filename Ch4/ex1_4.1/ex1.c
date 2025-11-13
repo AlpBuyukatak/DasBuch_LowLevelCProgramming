@@ -1,3 +1,9 @@
+//4.1 Pointer to an Array
+/*
+This code simulates copying a byte from an input port to an output port using three different 
+methods—absolute addressing, pointer arithmetic, and array indexing to show that 
+all approaches access the same memory location and produce the same result.
+*/
 #include <stdio.h>
 #include <stdint.h>
 

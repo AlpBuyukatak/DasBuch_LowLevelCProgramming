@@ -1,4 +1,9 @@
-// // 2.9 Explicit Type Conversion of Addresses - page 40
+//2.9 Explicit Type Conversion of Addresses - page 40
+/*
+This code simulates memory with a byte array, writes a 16-bit value at a specific index, 
+and then reads it back using a base pointer plus an offset, showing how pointer arithmetic 
+and casting let you access multi-byte data inside raw memory.
+*/
 #include <stdio.h>
 #include <stdint.h>
 

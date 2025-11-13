@@ -1,6 +1,10 @@
-
 //3.0 Pointer - page 44-45-46
 // JUST EXAMINE THE CODE
+/*
+This code demonstrates basic pointer usage by having p store the address of x, 
+printing its value through dereferencing, and also shows a pointer-to-pointer (pp) 
+that ultimately accesses the same value x through double dereferencing.
+*/
 #include <stdio.h>
 typedef unsigned int WORD;
 

@@ -1,4 +1,10 @@
 //2.6 Explicit Type Conversion - page 33
+/*
+This code shows how different integer constant suffixes (L, U, UL) affect the 
+type of the literal 0xFFFF, but all three still fit into a long, 
+so each variable ends up storing the same numeric value when printed.
+*/
+
 #include <stdio.h>
 
 int main(void) {

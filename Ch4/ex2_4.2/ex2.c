@@ -1,3 +1,9 @@
+//4.2 Array Address as a Function Argument
+/*
+This code copies a 5-element array twice once using array indexing and 
+once using pointer arithmetic and then prints all arrays to show that 
+both copy functions produce identical results.
+*/
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
