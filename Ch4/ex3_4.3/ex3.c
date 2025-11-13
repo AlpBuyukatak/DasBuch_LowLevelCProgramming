@@ -8,7 +8,7 @@ all remainders, while safely handling division by zero.
 #include <stdint.h>
 #include <stdlib.h>
 
-typedef uint16_t WORD;
+typedef uint16_t WORD; // defines WORD as 16-bit
 
 /*  
    arr1 → contains the dividends  
