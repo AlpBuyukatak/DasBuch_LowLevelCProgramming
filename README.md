@@ -2,7 +2,6 @@
 C Pointer and Memory – Study and Implementation
 
 
-
 #This repository contains a structured study of pointer and memory concepts in C, based on:
 “C – The Pointer Book” by Klaus Schröder
 
@@ -13,7 +12,7 @@ The repository includes:
 Chapter-based solutions to pointer and memory exercises
 C implementations focusing on low-level behavior
 A structured written document (thesis-style, Word)
-The original reference book (PDF)
+
 
 # APPROACH
 The study follows a systematic workflow:
